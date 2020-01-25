@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(255, 233, 215);
+}
+h1 {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+input {
+  background-color: #2ec4b6;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+
+input:hover {
+  background-color: #fc4848;
+}
+
+input:active {
+  background-color: #fc4848;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.showResults{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.dataBaseResults{
+  padding: 5%;
+}
+
+.dataBaseResults li{
+  padding: 5%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Elite EATS </title>
+    <link rel="icon" type="text/png" href="logo.png">
+    
+</head>
+
+<body>
+
+    
+    <center>
+
+        <!-- Logo -->
+        <img id="logo" src="logo2.png" height="200" width="200">
+        <h1 id="teamName"> Team KAD </h1>
+        <!--scan button-->
+        <input type="button" id="scan" onclick="start()" value="Scan Product"></input>
+
+        <div id="mainDisplay">
+            <h2 id="text">Barcode Number: <div id="result"></div>
+
+                <div id="itemfound"></div> </h2>
+                
+                <p>
+                    <div id="camera"></div>
+                </p>
+            
+            <input type="button" id="showResults" onclick="printCurrentItems()" value="See Current Items"> </input>
+            <h2 id="currentItemTag"></h2>    
+            <ul id="databaseResults"></ul>
+        </div>
+    </center>
+
+    <!-- <div>Teachable Machine Image Model</div>
+    <button type="button" onclick="init()">Start</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div> -->
+
+</body>
+
+<!-- Script files -->
+
+<!-- Database scripts -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+<!-- Camera Scripts -->
+<script src="js/quagga.min.js"></script>
+<script src="js/camera.js"></script>
+
+<!-- Teachable Machine Scripts -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript" src="=js/ai.js"></script> -->
+</html>
