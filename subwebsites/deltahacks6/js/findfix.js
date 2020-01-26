@@ -22,7 +22,7 @@ var ref = database.ref("fixes");
 
 
 //variables
-// var fixesList = document.getElementById("currentComplaintsList");
+// var fixesList = document.getElementById("currentFixedList");
 var complaintId = document.getElementById("complaintID");
 console.log(complaintId.value);
 function checkIdStatus(){
@@ -55,8 +55,16 @@ function gotData(data){
             // String(lat) + "," + String(long) + ") Message: " + String(message);
             // newComplaint.appendChild(complaintImg);
             // currentComplaintsList.appendChild(newComplaint);
-            break;
         }
+
+        // var newFix = document.createElement("li");
+        // var fixImg = document.createElement("img");
+        // fixImg.src = url;
+        // newFix.textContent = "Complaint ID: " + String(fixedId) + " Lat, Long: (" + 
+        // String(lat) + "," + String(long) + ")";
+        // newFix.appendChild(complaintImg);
+        // currentFixedList.appendChild(newComplaint);
+
     }
 }
 
