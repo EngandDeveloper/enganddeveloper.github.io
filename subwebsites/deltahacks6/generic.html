@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Check Complaint</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Check Complaint</h1>
+						<input type="text" id="complaintID" placeholder="Complaint Id">
+						<button id="getComplaintId" onclick="checkIdStatus()">Check Status</button>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/pic04.jpg" alt="" id="fixedPhoto" /></span>
+								<h2>Fix Status: </h2>
+								<p id="fixStatus"> </p>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>If you don't see a fix yet:</h2>
+							<p> We are trying our best to 
+								fix everythin in timely manner. Please give
+								us a few more days and then contact us if you still
+								have any concerns.
+							</p>
+							
+						</section>
+						<section>
+							<h2>Contact Info</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>71 Main St W,  &bull; Hamilton, ON L8P 4Y5 &bull; Canada</dd>
+								<dt>Phone</dt>
+								<dd>(905) 546-2489 </dd>
+								<dt>Website</dt>
+								<dd><a href="https://www.hamilton.ca">hamilton.ca</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<!-- <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+			<!-- Firebase -->
+			<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+	<script src="js/findfix.js"></script>
+
+</html>
