@@ -1,5 +1,7 @@
 // var dataUrl = "https://wuhan-coronavirus-api.laeyoung.endpoint.ainize.ai/jhu-edu/timeseries";
-var dataUrl = "https://corona.lmao.ninja/all";
+var dataUrl = "https://corona.lmao.ninja/v2/all";
+// Old Url
+//var dataUrl = "https://corona.lmao.ninja/all";
 
 var meta = document.getElementById("metaData");
 

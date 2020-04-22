@@ -9,7 +9,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(mymap);
 
 //Fetch coronavirus data
-var dataUrl = "https://corona.lmao.ninja/countries?sort=%7Bparameter%7D";
+var dataUrl = "https://corona.lmao.ninja/v2/countries";
+// Old url
+//var dataUrl = "https://corona.lmao.ninja/countries?sort=%7Bparameter%7D";
 
 fetch(dataUrl).then((response)=>{
     return response.json();
@@ -19,7 +21,7 @@ fetch(dataUrl).then((response)=>{
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.5,
-            radius: 15000+(data[i].cases*5)
+            radius: 25000+(data[i].cases*2)
         }).addTo(mymap);
 
         circle.bindPopup("Country: " + data[i].country + "<br> Total case: " + data[i].cases + "<br> Recovered case: " + data[i].recovered + 
