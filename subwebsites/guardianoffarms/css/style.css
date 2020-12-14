@@ -1,0 +1,22 @@
+*{
+    margin: none;
+    padding: none;
+}
+
+.logo img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.screenshots{
+    width: 25em;
+    height: 45em;
+}
+
+.google-play-store-badge{
+    width: 20em;
+    height: 7em;
+    /* margin-left: 35%;
+    margin-right: 35%; */
+}

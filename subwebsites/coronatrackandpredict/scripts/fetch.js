@@ -9,5 +9,5 @@ fetch(dataUrl).then((response)=>{
     return response.json();
 }).then(function(data){
     console.log(data)
-    meta.textContent = "Total Case: " + data.cases + " Deaths: " + data.deaths + " Recovered: " + data.recovered;
+    meta.textContent = "Total Case: " + data.cases.toLocaleString() + " Deaths: " + data.deaths.toLocaleString() + " Recovered: " + data.recovered.toLocaleString();
 });

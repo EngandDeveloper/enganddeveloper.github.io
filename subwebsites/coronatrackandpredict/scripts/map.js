@@ -21,10 +21,10 @@ fetch(dataUrl).then((response)=>{
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.5,
-            radius: 25000+(data[i].cases*2)
+            radius: 180000 + (data[i].cases * (0.05))
         }).addTo(mymap);
 
-        circle.bindPopup("Country: " + data[i].country + "<br> Total case: " + data[i].cases + "<br> Recovered case: " + data[i].recovered + 
-        "<br> Death: " + data[i].deaths);
+        circle.bindPopup("Country: " + data[i].country + "<br> Total case: " + data[i].cases.toLocaleString() + "<br> Recovered case: " + data[i].recovered.toLocaleString() + 
+        "<br> Death: " + data[i].deaths.toLocaleString());
     }
 });
